@@ -39,7 +39,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>java.com.mycompany.app.App</mainClass>
+              <mainClass>com.mycompany.app.AppTest</mainClass>
             </manifest>
           </archive>
         </configuration>
