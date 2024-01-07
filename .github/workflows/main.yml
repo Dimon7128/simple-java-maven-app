@@ -18,6 +18,9 @@ jobs:
     - name: Build with Maven
       run: mvn -B -DskipTests clean package
 
+    - name: Extract JAR contents
+      run: jar xf target/my-app-1.0-SNAPSHOT.jar
+
     - name: Test with Maven
       run: mvn test
       # Add steps for test result reporting here if needed
