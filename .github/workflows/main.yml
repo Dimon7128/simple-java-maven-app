@@ -1,4 +1,4 @@
-name: Java CIi
+name: Java CI
 
 on: [push]
 
@@ -21,6 +21,9 @@ jobs:
     - name: Extract JAR contents
       run: jar xf target/my-app-1.0-SNAPSHOT.jar
 
+    - name: Extract JAR contents with tf
+      run: jar tf target/my-app-1.0-SNAPSHOT.jar
+
     - name: Test with Maven
       run: mvn test
 
@@ -33,4 +36,4 @@ jobs:
 
     - name: Deliver
       run: ./jenkins/scripts/deliver.sh
-      
+
