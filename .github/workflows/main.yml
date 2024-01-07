@@ -20,13 +20,12 @@ jobs:
 
     - name: Extract JAR contents
       run: jar xf target/my-app-1.0-SNAPSHOT.jar
-		
+
 		- name: Extract JAR contents with tf
 			run: jar tf target/my-app-1.0-SNAPSHOT.jar
 
     - name: Test with Maven
       run: mvn test
-      
 
   deliver:
     runs-on: ubuntu-latest
